@@ -44,7 +44,8 @@ function App() {
             className="header-image"
           />
  <p style={{ color: "var(--color-lagoon)" }}>
-           Hang on, it takes a sec. Look squished? Rotate your phone.
+           Hang on, it takes a sec. </p>
+ <p style={{ color: "var(--color-lagoon)" }}>Look squished? Rotate your phone.
           </p>
           <table className="standings-table" style={{ width: "100%", tableLayout: "fixed" }}>
             <thead>
@@ -111,40 +112,40 @@ function App() {
                 </tr>
               </thead>
               <tbody>
-                {schedule.map((game, idx) => (
-                  <tr key={idx}>
-                    <td>{game.date}</td>
-                    <td>{game.time}</td>
-                    <td>
-                      <div style={{ display: "flex", alignItems: "center", gap: "10px" }}>
-                        <img
-                          src={`/logos/${game.team1.toLowerCase().replace(/\s+/g, "-")}.png`}
-                          alt={`${game.team1} logo`}
-                          style={{ height: "35px", width: "35px", objectFit: "contain" }}
-                          onError={(e) => {
-                            e.target.style.display = "none";
-                          }}
-                        />
-                        {game.team1}
-                      </div>
-                    </td>
-                    <td>
-                      <div style={{ display: "flex", alignItems: "center", gap: "10px" }}>
-                        <img
-                          src={`/logos/${game.team2.toLowerCase().replace(/\s+/g, "-")}.png`}
-                          alt={`${game.team2} logo`}
-                          style={{ height: "35px", width: "35px", objectFit: "contain" }}
-                          onError={(e) => {
-                            e.target.style.display = "none";
-                          }}
-                        />
-                        {game.team2}
-                      </div>
-                    </td>
-                    <td>{game.location}</td>
-                  </tr>
-                ))}
-              </tbody>
+  {schedule.map((game, idx) => (
+    <tr key={idx}>
+      <td>{game.date}</td>
+      <td>{game.time}</td>
+      <td style={{ textAlign: "left" }}>
+        <div style={{ display: "flex", alignItems: "center", gap: "10px" }}>
+          <img
+            src={`/logos/${game.team1.toLowerCase().replace(/\s+/g, "-")}.png`}
+            alt={`${game.team1} logo`}
+            style={{ height: "35px", width: "35px", objectFit: "contain" }}
+            onError={(e) => {
+              e.target.style.display = "none";
+            }}
+          />
+          {game.team1}
+        </div>
+      </td>
+      <td style={{ textAlign: "left" }}>
+        <div style={{ display: "flex", alignItems: "center", gap: "10px" }}>
+          <img
+            src={`/logos/${game.team2.toLowerCase().replace(/\s+/g, "-")}.png`}
+            alt={`${game.team2} logo`}
+            style={{ height: "35px", width: "35px", objectFit: "contain" }}
+            onError={(e) => {
+              e.target.style.display = "none";
+            }}
+          />
+          {game.team2}
+        </div>
+      </td>
+      <td>{game.location}</td>
+    </tr>
+  ))}
+</tbody>
             </table>
           ) : (
             <p style={{ textAlign: "center", marginTop: "1rem" }}>
