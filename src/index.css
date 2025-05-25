@@ -146,7 +146,7 @@ td:nth-child(5) {
 .header-image {
   display: block;
   margin: 0 auto 1rem auto;
-  max-width: 120%;
+  max-width: 150%;
   position: relative;
   left: 50%;
   transform: translateX(-50%);
