@@ -44,8 +44,10 @@ function App() {
             className="header-image"
           />
           <div style={{ overflowX: "auto", width: "100%" }}>
-            <table className="standings-table" style={{ width: "100%", tableLayout: "fixed" }}>
-              <thead>
+            <table className="standings-table" style={{ minWidth: "600px", tableLayout: "fixed", width: "100%" }}>
+           
+
+  <thead>
                 <tr>
                   <th style={{ width: "10%" }}>Rank</th>
                   <th style={{ width: "40%", textAlign: "left" }}>Team</th>
