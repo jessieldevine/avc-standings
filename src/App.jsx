@@ -43,6 +43,9 @@ function App() {
             alt="AVC 2025 Summer Sand League Standings banner"
             className="header-image"
           />
+ <p style={{ color: "var(--color-lagoon)" }}>
+           Hang on, it takes a sec. Look squished? Rotate your phone.
+          </p>
           <table className="standings-table" style={{ width: "100%", tableLayout: "fixed" }}>
             <thead>
               <tr>
@@ -56,7 +59,7 @@ function App() {
             <tbody>
               {teams.map((team, index) => {
                 const name = team.name;
-                const logoSrc = /logos/${name.toLowerCase().replace(/\s+/g, "-")}.png;
+                const logoSrc = `/logos/${name.toLowerCase().replace(/\s+/g, "-")}.png`;
                 return (
                   <tr key={name}>
                     <td style={{ textAlign: "center" }}>{index + 1}</td>
@@ -64,7 +67,7 @@ function App() {
                       <div style={{ display: "flex", alignItems: "center", gap: "10px" }}>
                         <img
                           src={logoSrc}
-                          alt={${name} logo}
+                          alt={`${name} logo`}
                           style={{ height: "45px", width: "45px", objectFit: "contain" }}
                           onError={(e) => {
                             e.target.style.display = "none";
@@ -115,8 +118,8 @@ function App() {
                     <td>
                       <div style={{ display: "flex", alignItems: "center", gap: "10px" }}>
                         <img
-                          src={/logos/${game.team1.toLowerCase().replace(/\s+/g, "-")}.png}
-                          alt={${game.team1} logo}
+                          src={`/logos/${game.team1.toLowerCase().replace(/\s+/g, "-")}.png`}
+                          alt={`${game.team1} logo`}
                           style={{ height: "35px", width: "35px", objectFit: "contain" }}
                           onError={(e) => {
                             e.target.style.display = "none";
@@ -128,8 +131,8 @@ function App() {
                     <td>
                       <div style={{ display: "flex", alignItems: "center", gap: "10px" }}>
                         <img
-                          src={/logos/${game.team2.toLowerCase().replace(/\s+/g, "-")}.png}
-                          alt={${game.team2} logo}
+                          src={`/logos/${game.team2.toLowerCase().replace(/\s+/g, "-")}.png`}
+                          alt={`${game.team2} logo`}
                           style={{ height: "35px", width: "35px", objectFit: "contain" }}
                           onError={(e) => {
                             e.target.style.display = "none";
