@@ -45,7 +45,7 @@ function App() {
           />
  <p style={{ color: "var(--color-lagoon)" }}>
            Hang on, it takes a sec. </p>
- <p style={{ color: "var(--color-lagoon)" }}>Look squished? Rotate your phone.
+ <p style={{ color: "var(--color-lagoon)" }}>Look squished? Rotate your phone. 🔁
           </p>
           <table className="standings-table" style={{ width: "100%", tableLayout: "fixed" }}>
             <thead>
