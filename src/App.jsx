@@ -31,11 +31,19 @@ function App() {
         <img
           src="/logo.png"
           alt="AVC Logo"
-          style={{ height: "220px", width: "auto", display: "block", margin: "0 auto" }}
+          style={{ height: "400px", width: "auto", display: "block", margin: "0 auto" }}
         />
       </header>
 
       <main className="main">
+
+<div className="cream-block">
+ <p style={{ color: "var(--color-lagoon)" }}>
+           Join us for a potluck on <b>Sunday, May 25th at 5:00 PM!</b> We'll be at Sunset Park on court 1 until lights out. The grill will be going and the games will be good. 🤗 </p>
+ </div>
+
+
+
         {/* Standings Block */}
         <div className="cream-block">
           <img
