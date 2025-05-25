@@ -44,8 +44,8 @@ function App() {
             className="header-image"
           />
  <p style={{ color: "var(--color-lagoon)" }}>
-           Hang on, it takes a sec. </p>
- <p style={{ color: "var(--color-lagoon)" }}>Look squished? Rotate your phone. 🔁
+           Look squished?</p>
+ <p style={{ color: "var(--color-lagoon)" }}> Rotate your phone. 🔁
           </p>
           <table className="standings-table" style={{ width: "100%", tableLayout: "fixed" }}>
             <thead>
