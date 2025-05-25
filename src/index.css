@@ -127,7 +127,7 @@ td:nth-child(5) {
 }
 
 .header-image {
-  max-width: 140%;
+  max-width: 120%;
   transform: translateX(-12%);
   height: auto;
   display: block;
@@ -152,7 +152,7 @@ td:nth-child(5) {
 .header-image {
   display: block;
   margin: 0 auto 1rem auto;
-  max-width: 130%;
+  max-width: 120%;
   position: relative;
   left: 50%;
   transform: translateX(-50%);
@@ -162,7 +162,7 @@ td:nth-child(5) {
   background-color: var(--color-cream);
   padding: 2rem;
   margin: 2rem auto;
-  max-width: 80%;
+  max-width: 90%;
   border-radius: 12px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
 }
