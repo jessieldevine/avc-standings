@@ -126,13 +126,7 @@ td:nth-child(5) {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
-.header-image {
-  max-width: 120%;
-  transform: translateX(-12%);
-  height: auto;
-  display: block;
-  margin: 1rem auto;
-}
+
 
 @media (max-width: 800px) {
   .header-image {
