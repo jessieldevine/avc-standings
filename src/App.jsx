@@ -1,3 +1,4 @@
+// src/App.jsx
 import { useEffect, useState } from "react";
 import "./index.css";
 
@@ -42,14 +43,14 @@ function App() {
             alt="AVC 2025 Summer Sand League Standings banner"
             className="header-image"
           />
-          <table className="standings-table">
+          <table className="standings-table" style={{ width: "100%", tableLayout: "fixed" }}>
             <thead>
               <tr>
-                <th>Rank</th>
-                <th>Team</th>
-                <th>Wins</th>
-                <th>Losses</th>
-                <th>Point Differential</th>
+                <th style={{ width: "10%" }}>Rank</th>
+                <th style={{ width: "40%", textAlign: "left" }}>Team</th>
+                <th style={{ width: "15%" }}>Wins</th>
+                <th style={{ width: "15%" }}>Losses</th>
+                <th style={{ width: "20%" }}>Point Differential</th>
               </tr>
             </thead>
             <tbody>
@@ -89,17 +90,21 @@ function App() {
             alt="Upcoming Game Schedule"
             className="header-image"
           />
-		<p style={{ color: "var(--color-lagoon)" }}>Each team will play two sets against two different teams for a total of <b>four sets</b> each week. There will be no third set during pool play. Games will be played to 21.</p>
-<p style={{ color: "var(--color-lagoon)" }}> Games will either be played back-to-back, or you'll have to sit for one game between. You'll never have to sit for more than one game.</p>
+          <p style={{ color: "var(--color-lagoon)" }}>
+            Each team will play two sets against two different teams for a total of <b>four sets</b> each week. There will be no third set during pool play. Games will be played to 21.
+          </p>
+          <p style={{ color: "var(--color-lagoon)" }}>
+            Games will either be played back-to-back, or you'll have to sit for one game between. You'll never have to sit for more than one game.
+          </p>
           {schedule.length > 0 ? (
-            <table className="schedule-table">
+            <table className="schedule-table" style={{ width: "100%", tableLayout: "fixed" }}>
               <thead>
                 <tr>
-                  <th>Date</th>
-                  <th>Time</th>
-                  <th style={{ textAlign: "left" }}>Team 1</th>
-                  <th style={{ textAlign: "left" }}>Team 2</th>
-                  <th>Location</th>
+                  <th style={{ width: "20%" }}>Date</th>
+                  <th style={{ width: "15%" }}>Time</th>
+                  <th style={{ width: "25%", textAlign: "left" }}>Team 1</th>
+                  <th style={{ width: "25%", textAlign: "left" }}>Team 2</th>
+                  <th style={{ width: "15%" }}>Location</th>
                 </tr>
               </thead>
               <tbody>
