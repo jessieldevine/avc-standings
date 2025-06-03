@@ -49,6 +49,9 @@ function App() {
            Look squished?</p>
  <p style={{ color: "var(--color-lagoon)" }}> Rotate your phone. 🔁
           </p>
+          <p style={{ color: "var(--color-lagoon)" }}>
+            Standings are determined by the number of set wins and losses. Point differential breaks a tie.
+            </p>
           <table className="standings-table" style={{ width: "100%", tableLayout: "fixed" }}>
             <thead>
               <tr>
@@ -97,7 +100,7 @@ function App() {
             className="header-image"
           />
           <p style={{ color: "var(--color-lagoon)" }}>
-            Each team will play one game of two sets against two different teams, for a total of two games <b>(four sets)</b> each week. There will be no third set during pool play. Sets will be played to 21.
+            Each team will play one game of two sets against two different teams, for a total of two games <b>(four sets)</b> each week. In the event of a split game (one set win and one set loss), there will be <b>no</b> third, tiebreaking set during pool play. Sets will be played to 21.
           </p>
           <p style={{ color: "var(--color-lagoon)" }}>
             Games will either be played back-to-back, or you'll have to sit for one game between. You'll never have to sit for more than one game.
