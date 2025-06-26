@@ -160,3 +160,30 @@ td:nth-child(5) {
   border-radius: 12px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
 }
+
+/* Responsive styles for small screens */
+@media (max-width: 768px) {
+  th, td {
+    font-size: 12px;
+    padding: 0.5rem;
+    white-space: normal;
+    word-break: break-word;
+  }
+
+  td div {
+    flex-wrap: wrap;
+  }
+
+  td img {
+    height: 30px;
+    width: 30px;
+  }
+
+  .cream-block {
+    padding: 1rem;
+  }
+
+  body {
+    padding: 1rem;
+  }
+}
