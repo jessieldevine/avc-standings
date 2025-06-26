@@ -46,7 +46,7 @@ function App() {
             className="header-image"
           />
  <p style={{ color: "var(--color-lagoon)" }}>
-           Look squished?</p>
+           Too small?</p>
  <p style={{ color: "var(--color-lagoon)" }}> Rotate your phone. 🔁
           </p>
           <p style={{ color: "var(--color-lagoon)" }}>
@@ -105,6 +105,9 @@ function App() {
           <p style={{ color: "var(--color-lagoon)" }}>
             Games will either be played back-to-back, or you'll have to sit for one game between. You'll never have to sit for more than one game.
           </p>
+           <p style={{ color: "var(--color-lagoon)" }}>
+           Too small?</p>
+ <p style={{ color: "var(--color-lagoon)" }}> Rotate your phone. 🔁
           {schedule.length > 0 ? (
             <table className="schedule-table" style={{ width: "100%", tableLayout: "fixed" }}>
               <thead>
