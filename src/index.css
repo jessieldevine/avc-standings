@@ -164,15 +164,12 @@ td:nth-child(5) {
 /* Responsive styles for small screens */
 @media (max-width: 768px) {
   th, td {
-    font-size: 12px;
+   font-size: clamp(10px, 2.5vw, 16px);
     padding: 0.5rem;
     white-space: normal;
     word-break: break-word;
   }
 
-  td div {
-    flex-wrap: wrap;
-  }
 
   td img {
     height: 30px;
