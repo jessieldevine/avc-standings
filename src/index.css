@@ -164,7 +164,7 @@ td:nth-child(5) {
 /* Responsive styles for small screens */
 @media (max-width: 768px) {
   th, td {
-    font-size: clamp(0.7rem, 1.8vw, 1rem);
+    font-size: clamp(0.5rem, 1.8vw, 1rem);
     padding: 0.5rem;
     white-space: normal;
     word-break: break-word; /* only breaks if necessary */
